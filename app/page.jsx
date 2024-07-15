@@ -47,7 +47,7 @@ export default function Home() {
             <div className="custom-container grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-20 max-xl:gap-16 max-lg:gap-10 padding">
                {
                   [0, 1, 2].map((i) => (
-                     <div className="max-sm:px-3 text-gray-200">
+                     <div key={i} className="max-sm:px-3 text-gray-200">
                         <div className="border-4 border-gray-200 p-3 rounded-full w-fit m-auto">
                            <FaHotel size={30} color="#fff" />
                         </div>
@@ -206,7 +206,7 @@ export default function Home() {
                <div className="flex items-center gap-10 max-md:gap-5 mt-14 max-md:mt-8 overflow-auto scroll-none">
                   {
                      [0, 1, 2].map((i) => (
-                        <div className="min-w-80 max-md:min-w-60 flex flex-col p-8 max-md:p-4 rounded-md bg-[#28564a] text-white">
+                        <div key={i} className="min-w-80 max-md:min-w-60 flex flex-col p-8 max-md:p-4 rounded-md bg-[#28564a] text-white">
                            <p className="max-md:text-sm text-center mb-5">
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis facilis rerum odit harum itaque sequi est minus id blanditiis corporis cum, impedit asperiores mollitia nesciunt totam, nam pariatur! Fugiat?
                            </p>
@@ -237,7 +237,7 @@ export default function Home() {
                <div className="grid grid-cols-4 gap-10 mt-10">
                   {
                      [0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
-                        <div className="">
+                        <div key={i} className="">
                            <Image
                               src={"/images/image-1.png"}
                               width={1000}
