@@ -82,7 +82,7 @@ export default function Home() {
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas commodi ullam iusto, perspiciatis quis excepturi quibusdam est reprehenderit inventore odio voluptatum expedita corporis ipsam.
                            </p>
                         </div>
-                        <div className="w-1/2 max-lg:w-full max-h-96 max-lg:max-h-60 max-md:max-h-40 bg-slate-400">
+                        <div className="w-1/2 max-lg:w-full max-h-96 max-lg:max-h-60 max-md:h-40 overflow-hidden">
                            <Image
                               className="w-full h-full object-cover"
                               width={1000}
@@ -211,7 +211,7 @@ export default function Home() {
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis facilis rerum odit harum itaque sequi est minus id blanditiis corporis cum, impedit asperiores mollitia nesciunt totam, nam pariatur! Fugiat?
                            </p>
                            <div className="w-fit m-auto flex gap-3 mt-auto">
-                              <div className="bg-[red] p-6 rounded-lg"></div>
+                              <div className="bg-gray-500 p-6 rounded-lg"></div>
                               <div className="">
                                  <p>Camella</p>
                                  <p>Lorem, ipsum.</p>
