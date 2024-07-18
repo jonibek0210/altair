@@ -13,7 +13,7 @@ const Playfair_DisplayFont = Playfair_Display({
 export default function Home() {
    return (
       <>
-         <section>
+         <section>   
             <Hero Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
          <section>
@@ -82,7 +82,7 @@ export default function Home() {
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quas commodi ullam iusto, perspiciatis quis excepturi quibusdam est reprehenderit inventore odio voluptatum expedita corporis ipsam.
                            </p>
                         </div>
-                        <div className="w-1/2 max-lg:w-full max-h-96 max-lg:max-h-60 max-md:h-40 overflow-hidden">
+                        <div className="w-1/2 max-lg:w-full max-h-96 max-lg:h-60 max-md:h-40 overflow-hidden">
                            <Image
                               className="w-full h-full object-cover"
                               width={1000}
