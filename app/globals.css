@@ -26,3 +26,23 @@
 .scroll-none::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 720px) {
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5em;
+    background: #0E0E0E;
+    z-index: 2;
+    display: flex;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  }
+
+  .menu-link-item {
+    width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
