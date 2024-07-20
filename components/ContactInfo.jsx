@@ -9,17 +9,17 @@ import { MdEmail } from "react-icons/md";
 const arr = [
     {
         icon: <IoIosCall className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "Call-Us",
+        title: "Номер",
         dcr: "+998(99)999-9999"
     },
     {
         icon: <FaMapMarkedAlt className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "Our Location",
+        title: "локация",
         dcr: "Location"
     },
     {
         icon: <MdEmail className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "Email",
+        title: "почта",
         dcr: "altair@gmail.com"
     }
 ]

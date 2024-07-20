@@ -33,14 +33,14 @@ const Map = ({ Playfair_DisplayFont }) => {
         <div className="map-sec mt-20 max-lg:mt-10 flex max-lg:flex-col items-center gap-10">
             <div className="lg:w-1/2">
                 <div>
-                    <h2 className={`questions text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Realx In Our Hotel</h2>
-                    <p className={`questions my-3 text-gray font-medium ${Playfair_DisplayFont.className}`}>Altair Hotel Headquarters</p>
-                    <p className='questions text-sm text-gray'>
+                    <h2 className={`questions text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Realx в нашем отеле</h2>
+                    <p className={`questions my-3 text-gray font-medium ${Playfair_DisplayFont.className}`}>Штаб-квартира отеля Altair</p>
+                    {/* <p className='questions text-sm text-gray'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolorum pariatur aliquam, fugit asperiores voluptas iure
                         commodi laudantium omnis dolore quia, ab doloribus
                         doloremque! Fuga consequatur quibusdam, omnis suscipit harum eius!
-                    </p>
+                    </p> */}
                 </div>
                 <div className="mt-5 flex flex-col gap-2 questions">
                     <Accordions />

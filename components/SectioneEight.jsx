@@ -22,14 +22,14 @@ const SectioneEight = ({ Playfair_DisplayFont }) => {
     return (
         <div className="eight-sec custom-container padding flex gap-5 max-lg:flex-col lg:items-center justify-between">
             <div className="max-w-4xl max-xl:max-w-3xl text-white">
-                <h2 className={`eight-sec-title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium ${Playfair_DisplayFont.className}`}>Capture Every Moment With Us</h2>
+                <h2 className={`eight-sec-title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium ${Playfair_DisplayFont.className}`}>Запечатлейте каждый момент вместе с нами</h2>
                 <hr className="eight-sec-title line bg-white" />
                 <p className="eight-sec-title tracking-[2px] max-sm:text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi expedita, dolores est quidem suscipit debitis dolor pariatur asperiores vitae.
+                    Зафиксируйте каждый ценный момент вместе с нами: наши уникальные услуги и гостеприимная атмосфера помогут создать воспоминания, которые вы будете хранить долгие годы.
                 </p>
             </div>
             <div className="">
-                <button className="eight-sec-title button">Contact Us</button>
+                <button className="eight-sec-title button">Контакты</button>
             </div>
         </div>
     )

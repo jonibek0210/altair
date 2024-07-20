@@ -27,7 +27,7 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
                     256
                 </div>
                 <div className="text-sm mt-1">
-                    customer
+                    Клиенты
                 </div>
             </div>
             <div className="time text-center">
@@ -35,7 +35,7 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
                     48
                 </div>
                 <div className="text-sm mt-1">
-                    Rooms
+                    Номера
                 </div>
             </div>
             <div className="time text-center">
@@ -43,7 +43,7 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
                     26
                 </div>
                 <div className="text-sm mt-1">
-                    facilities
+                    Удобства
                 </div>
             </div>
             <div className="time text-center">
@@ -51,7 +51,7 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
                     59
                 </div>
                 <div className="text-sm mt-1">
-                    staff
+                    Персонал
                 </div>
             </div>
         </div>

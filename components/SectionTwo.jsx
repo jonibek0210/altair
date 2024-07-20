@@ -41,18 +41,15 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
             </div>
 
             <div className="two-sec text-center md:w-1/2 max-w-4xl pr-24 max-lg:pr-14 max-md:px-5 max-md:mt-5">
-                <p className={`two mb-1 tracking-[4px] font-medium text-gray ${Playfair_DisplayFont.className}`}>HOTEL RESORT</p>
-                <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Relax In Place Heaven</h2>
+                <p className={`two mb-1 tracking-[4px] font-medium text-gray ${Playfair_DisplayFont.className}`}>ОТЕЛЬ КУРОРТ</p>
+                <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Расслабьтесь в месте Heaven</h2>
                 <hr className="two line m-auto bg-[#6d6960]" />
                 <p className="two text-sm tracking-[1px] text-gray">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus, molestiae deleniti quia ut minus sequi inventore
-                    aliquid nobis itaque? Labore enim error impedit corrupti
-                    doloremque reiciendis quis debitis assumenda quibusdam.
+                    Расслабьтесь в раю: наслаждение моментами спокойствия в уникальном месте под названием Heaven, где каждый шаг наполнен гармонией природы и теплом солнечных лучей, создавая идеальное место для истинного отдыха и восстановления сил.
                 </p>
-                <button className="two button m-auto mt-5">About Us</button>
+                <button className="two button m-auto mt-5">Контакты</button>
             </div>
-        </div>
+        </div>  
     )
 }
 

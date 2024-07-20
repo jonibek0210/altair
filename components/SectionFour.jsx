@@ -33,8 +33,8 @@ const SectionFour = ({ Playfair_DisplayFont }) => {
 
     return (
         <div className="four-sec custom-container padding">
-            <div className="text-center">
-                <h2 className={`title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Our Rooms</h2>
+            <div id='rooms' className="text-center">
+                <h2 className={`title text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Наши номера</h2>
             </div>
 
             <div className="mt-10 max-lg:mt-7 max-md:mt-7">

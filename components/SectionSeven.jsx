@@ -33,12 +33,12 @@ const SectionSeven = ({ Playfair_DisplayFont }) => {
     }, []);
 
     return (
-        <div className="custom-container padding trigger">
+        <div id='reviews' className="custom-container padding trigger">
             <div className=" max-w-3xl m-auto text-center">
-                <h2 className={`texts text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-white ${Playfair_DisplayFont.className}`}>What Our Client Says</h2>
+                <h2 className={`texts text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-white ${Playfair_DisplayFont.className}`}>Что говорит наш клиент</h2>
                 <hr className="texts line m-auto bg-white" />
                 <p className="texts tracking-[2px] max-sm:text-sm text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi expedita, dolores est quidem suscipit debitis dolor pariatur asperiores vitae.
+                    Голос клиента: впечатления и отзывы о нашем обслуживании, вдохновляющие нас стремиться к еще большему качеству и удовлетворению потребностей наших гостей.
                 </p>
             </div>
 

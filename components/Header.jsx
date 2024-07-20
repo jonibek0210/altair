@@ -78,28 +78,28 @@ const Header = () => {
                         <li className='menu-link-item'>
                             <p className='menu-link-item-holder transform-none md:leading-loose'>
                                 <Link onClick={() => setOpenModal(false)} href={"/"} className='max-md:text-6xl font-medium'>
-                                    Home
+                                    Главная
                                 </Link>
                             </p>
                         </li>
                         <li className='menu-link-item'>
                             <p className='menu-link-item-holder md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={"#"} className='max-md:text-6xl font-medium'>
-                                    About Us
+                                <Link onClick={() => setOpenModal(false)} href={"#reviews"} className='max-md:text-6xl font-medium'>
+                                    Отзывы
                                 </Link>
                             </p>
                         </li>
                         <li className='menu-link-item'>
                             <p className='menu-link-item-holder md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={"#"} className='max-md:text-6xl font-medium'>
-                                    Gallery
+                                <Link onClick={() => setOpenModal(false)} href={"#rooms"} className='max-md:text-6xl font-medium'>
+                                    Номера
                                 </Link>
                             </p>
                         </li>
                         <li className='menu-link-item'>
                             <p className='menu-link-item-holder translate-y-[75px] md:leading-loose'>
                                 <Link onClick={() => setOpenModal(false)} href={"/contacts"} className='max-md:text-6xl font-medium'>
-                                    Contact Us
+                                    Контакты
                                 </Link>
                             </p>
                         </li>
@@ -108,22 +108,22 @@ const Header = () => {
                     <ul className='max-md:hidden flex max-md:flex-col md:items-center md:justify-between gap-5 max-md:gap-3 px-3 max-md:pt-5'>
                         <li className='link'>
                             <Link onClick={() => setOpenModal(false)} href={"/"}>
-                                Home
+                                Главная
                             </Link>
                         </li>
                         <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={"#"}>
-                                About Us
+                            <Link onClick={() => setOpenModal(false)} href={"#reviews"}>
+                                Отзывы
                             </Link>
                         </li>
                         <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={"#"}>
-                                Gallery
+                            <Link onClick={() => setOpenModal(false)} href={"#rooms"}>
+                                Номера
                             </Link>
                         </li>
                         <li className='link'>
                             <Link onClick={() => setOpenModal(false)} href={"/contacts"}>
-                                Contact Us
+                                Контакты
                             </Link>
                         </li>
                     </ul>
