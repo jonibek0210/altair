@@ -26,7 +26,7 @@ const Hero = ({ Playfair_DisplayFont }) => {
     return (
         <>
             {/* <Modal /> */}
-            <div className="bg-[#1f4037]">
+            <div className="bg-[#c9aa7e]">
                 <div className='hero custom-container flex gap-5 items-center justify-between padding'>
                     <div className="w-1/2 max-lg:w-3/5 max-md:w-full">
                         <p className={`animated tracking-[4px] text-white ${Playfair_DisplayFont.className}`}>ДОБРО ПОЖАЛОВАТЬ В</p>
