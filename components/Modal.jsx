@@ -25,7 +25,7 @@ const Modal = ({ closeModal, isOpenModal }) => {
         <div ref={modalRef} onClick={handleSubmit} className="modal-bg fixed inset-0 flex items-center justify-center z-50 backdrop-blur-sm bg-[#4b4d6350]">
             <div onClick={(e) => e.stopPropagation()} className="modal bg-[#7d5a50] text-white p-6 rounded shadow-lg w-96 mx-3">
                 <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-lg font-semibold">Оставить заявку</h2>
+                    <h2 className="text-l   g font-semibold">Оставить заявку</h2>
                     <button onClick={handleSubmit} className="text-white hover:text-gray-300 duration-100">
                         <svg className="w-10 h-10 fill-current" viewBox="0 0 20 20">
                             <path
@@ -40,8 +40,6 @@ const Modal = ({ closeModal, isOpenModal }) => {
                     <label className="block text-sm font-medium">Имя</label>
                     <input
                         type="text"
-                        // value={input1}
-                        // onChange={handleInput1Change}
                         className="mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none sm:text-sm text-black"
                     />
                 </div>
@@ -49,8 +47,6 @@ const Modal = ({ closeModal, isOpenModal }) => {
                     <label className="block text-sm font-medium">Фамилия</label>
                     <input
                         type="text"
-                        // value={input2}
-                        // onChange={handleInput2Change}
                         className="mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none sm:text-sm text-black"
                     />
                 </div>
@@ -58,8 +54,6 @@ const Modal = ({ closeModal, isOpenModal }) => {
                     <label className="block text-sm font-medium">Номер</label>
                     <input
                         type="text"
-                        // value={input3}
-                        // onChange={handleInput3Change}
                         className="mt-1 block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none sm:text-sm text-black"
                     />
                 </div>
