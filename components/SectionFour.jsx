@@ -38,7 +38,7 @@ const SectionFour = ({ Playfair_DisplayFont }) => {
             </div>
 
             <div className="mt-10 max-lg:mt-7 max-md:mt-7">
-                <div className="bg-[#1f4037] room rounded-[60px] max-md:rounded-3xl overflow-hidden text-white">
+                <div className="bg-[#c9aa7e] room rounded-[60px] max-md:rounded-3xl overflow-hidden text-white">
                     <div className="flex max-lg:flex-col">
                         <div className="w-1/2 max-lg:w-full p-14 max-lg:px-10 max-md:px-4 max-lg:py-8 max-sm:py-5">
                             <h3 className={`text-4xl max-md:text-3xl font-medium text-center ${Playfair_DisplayFont.className}`}>Standart Room</h3>
@@ -66,7 +66,7 @@ const SectionFour = ({ Playfair_DisplayFont }) => {
                                 <h4 className="text-center mt-2 ">Free Wifi</h4>
                                 <p className="text-center mt-1 text-sm max-lg:text-xs ">Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
-                            <div className="bg-[#28564a] min-w-52 max-2xl:min-w-44 max-sm:min-w-36 py-5 max-sm:py-3 px-10 max-2xl:px-5">
+                            <div className="bg-[#9e7777] min-w-52 max-2xl:min-w-44 max-sm:min-w-36 py-5 max-sm:py-3 px-10 max-2xl:px-5">
                                 <div className="border-4 max-sm:border-2 border-[#fff] p-3 max-sm:p-2 rounded-full w-fit m-auto">
                                     <FaHotel size={20} color="#fff" />
                                 </div>
@@ -80,7 +80,7 @@ const SectionFour = ({ Playfair_DisplayFont }) => {
                                 <h4 className="text-center mt-2 max-sm:text-sm ">Regular Service</h4>
                                 <p className="text-center mt-1 text-sm max-lg:text-xs ">Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
-                            <div className="bg-[#28564a] min-w-52 max-2xl:min-w-44 max-sm:min-w-36 py-5 max-sm:py-3 px-10 max-2xl:px-5">
+                            <div className="bg-[#9e7777] min-w-52 max-2xl:min-w-44 max-sm:min-w-36 py-5 max-sm:py-3 px-10 max-2xl:px-5">
                                 <div className="border-4 max-sm:border-2 border-[#fff] p-3 max-sm:p-2 rounded-full w-fit m-auto">
                                     <FaHotel size={20} color="#fff" />
                                 </div>

@@ -66,7 +66,7 @@ const Header = () => {
     }, [openModal])
 
     return (
-        <header ref={container} className='w-full bg-[#0E0E0E] text-white fixed z-50'>
+        <header ref={container} className='w-full bg-[#7d5a50] text-white fixed z-50'>
             <div className="custom-container flex justify-between items-center py-5 max-xl:py-3">
                 <div className="link">
                     <Link href={"/"}>

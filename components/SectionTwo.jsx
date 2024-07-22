@@ -30,7 +30,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
 
     return (
         <div className="flex max-md:flex-col-reverse items-center gap-20 max-2xl:gap-10">
-            <div className="two-sec-img w-1/2 max-md:w-full h-[500px] max-2xl:h-[400px] max-xl:h-[350px] max-lg:h-[300px] max-md:mr-5 rounded-r-full overflow-hidden bg-[#1f4037]">
+            <div className="two-sec-img w-1/2 max-md:w-full h-[500px] max-2xl:h-[400px] max-xl:h-[400px] max-lg:h-[350px] max-sm:h-[280px] max-md:mr-5 rounded-r-full overflow-hidden bg-[#1f4037]">
                 <Image
                     className="w-full h-full object-cover"
                     width={1000}
@@ -49,7 +49,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
                 </p>
                 <button className="two button m-auto mt-5">Контакты</button>
             </div>
-        </div>  
+        </div>
     )
 }
 

@@ -1,14 +1,16 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import TextPlugin from 'gsap/TextPlugin'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Modal from './Modal'
 
 const Hero = ({ Playfair_DisplayFont }) => {
     const [isOpenModal, setIsOpenModal] = useState(false);
+
+    const openModal = () => setIsOpenModal(true);
+    const closeModal = () => setIsOpenModal(false);
+
     useGSAP(() => {
         gsap.from(".animated", {
             x: -40,
@@ -25,14 +27,14 @@ const Hero = ({ Playfair_DisplayFont }) => {
 
     return (
         <>
-            {/* <Modal /> */}
+            <Modal isOpenModal={isOpenModal} closeModal={closeModal} />
             <div className="bg-[#c9aa7e]">
                 <div className='hero custom-container flex gap-5 items-center justify-between padding'>
                     <div className="w-1/2 max-lg:w-3/5 max-md:w-full">
                         <p className={`animated tracking-[4px] text-white ${Playfair_DisplayFont.className}`}>ДОБРО ПОЖАЛОВАТЬ В</p>
                         <h2 className={`animated text-6xl max-2xl:text-6xl max-xl:text-5xl max-xs:text-4xl font-medium mb-3 text-white ${Playfair_DisplayFont.className}`}>Удивительный роскошный отель</h2>
                         <p className='animated text-sm text-white'>Искусство Роскоши и Комфорта: Погружение в Удивительный Мир Роскошного Отеля, Где Каждая Деталь Совершенствуется для Максимального Комфорта и Удовольствия Гостей. Откройте Двери в Роскошь, Где Расположение, Обслуживание и Удобства Сливаются в Идеальное Гостеприимство.</p>
-                        <button className='animated button mt-5'>Оставить заявку</button>
+                        <button onClick={openModal} className='animated button mt-5'>Оставить заявку</button>
                     </div>
                     <div className="hero-img w-1/2 max-md:hidden max-w-[400px] max-h-[400px] max-xl:max-w-[350px] max-xl:max-h-[350px] max-lg:max-w-[280px] max-lg:max-h-[280px] rounded-tl-[250px] max-lg:rounded-tl-[200px] overflow-hidden">
                         <Image

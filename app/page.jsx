@@ -16,7 +16,7 @@ const Playfair_DisplayFont = Playfair_Display({
    display: 'swap',
    subsets: ["latin"]
 });
-
+   
 export default function Home() {
    return (
       <>
@@ -27,7 +27,7 @@ export default function Home() {
             <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
-         <section className="bg-[#1f4037]">
+         <section className="bg-[#c9aa7e]">
             <SectionThree Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
@@ -35,7 +35,7 @@ export default function Home() {
             <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
-         <section className="bg-[#1f4037]">
+         <section className="bg-[#c9aa7e]">
             <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
@@ -43,7 +43,7 @@ export default function Home() {
             <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
-         <section className="bg-[#1f4037]">
+         <section className="bg-[#c9aa7e]">
             <SectionSeven Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
 
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
          </section> */}
 
-         <section className="bg-[#1f4037]">
+         <section className="bg-[#c9aa7e]">
             <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} />
          </section>
       </>

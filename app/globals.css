@@ -22,7 +22,7 @@
 }
 
 .button {
-  @apply py-2 px-3 rounded-md text-sm font-semibold bg-[#28564a] text-white;
+  @apply py-2 px-3 rounded-md text-sm font-semibold bg-[#9e7777] text-white;
 }
 
 .line {
@@ -41,7 +41,7 @@
     width: 100vw;
     height: 100vh;
     padding-top: 5em;
-    background: #0E0E0E;
+    background: #7d5a50;
     z-index: 2;
     display: flex;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);

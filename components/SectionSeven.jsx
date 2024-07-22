@@ -45,7 +45,7 @@ const SectionSeven = ({ Playfair_DisplayFont }) => {
             <div className="coms flex items-center gap-7 max-md:gap-5 mt-14 max-md:mt-8 overflow-auto scroll-none">
                 {
                     [0, 1, 2].map((i) => (
-                        <div key={i} className="com min-w-80 max-md:min-w-60 flex flex-col p-8 max-md:p-4 rounded-md bg-[#28564a] text-white">
+                        <div key={i} className="com min-w-80 max-md:min-w-60 flex flex-col p-8 max-md:p-4 rounded-md bg-[#b99c74] text-white">
                             <p className="max-md:text-sm text-center mb-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nobis facilis rerum odit harum itaque sequi est minus id blanditiis corporis cum, impedit asperiores mollitia nesciunt totam, nam pariatur! Fugiat?
                             </p>
