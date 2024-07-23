@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
          <body className={RobotoFont.className}>
             <Header />
-            <main className="pt-16 max-xl:pt-14">
+            <main className="pt-16 max-xl:pt-14 max-md:pt-8">
                {children}
             </main>
             <Footer />

@@ -36,10 +36,10 @@ const ContactInfo = ({ Playfair_DisplayFont }) => {
     }, [])
 
     return (
-        <div className="flex items-center justify-around px-3 py-10 max-lg:py-8 max-sm:py-5 rounded-full bg-[#c9aa7e]">
+        <div className="flex items-center justify-around px-3 py-10 max-lg:py-8 max-sm:py-5 rounded-full max-md:rounded-xl bg-[#7d5a50]">
             {
                 arr.map((i) => (
-                    <div key={i} className="info flex flex-col items-center justify-center gap-3 max-lg:gap-1">
+                    <div key={i} className="info flex flex-col items-center justify-center gap-3 max-lg:gap-1 max-sm:gap-0">
                         <div className="mb-3 max-lg:mb-0 w-fit h-fit p-3 max-sm:p-2 rounded-full border-2 border-white">
                             {i.icon}
                         </div>

@@ -67,10 +67,10 @@ const Header = () => {
 
     return (
         <header ref={container} className='w-full bg-[#7d5a50] text-white fixed z-50'>
-            <div className="custom-container flex justify-between items-center py-5 max-xl:py-3">
+            <div className="custom-container flex justify-between items-center py-5 max-xl:py-3 max-md:py-2">
                 <div className="link">
                     <Link href={"/"}>
-                        <h1 className='text-2xl font-semibold'>ALTAIR</h1>
+                        <h1 className='text-2xl max-sm:text-xl font-semibold'>ALTAIR</h1>
                     </Link>
                 </div>
                 <nav className={`menu-overlay max-lg:z-[-1]`}>
@@ -128,8 +128,8 @@ const Header = () => {
                         </li>
                     </ul>
                 </nav>
-                <div className="max-md:block hidden h-fit link">
-                    <button className='h-[25px] overflow-hidden' onClick={() => setOpenModal(!openModal)}>
+                <div className="max-md:flex hidden  items-center link">
+                    <button className='h-[25px] overflow-hidden my-auto' onClick={() => setOpenModal(!openModal)}>
                         <IoCloseSharp className='close' size={25} color='#fff' />
                         <GiHamburgerMenu className='open' size={25} color='#fff' />
                     </button>

@@ -40,7 +40,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
                 />
             </div>
 
-            <div className="two-sec text-center lg:w-3/5 max-w-4xl pr-24 max-lg:pr-14 max-lg:px-5 max-lg:mt-5">
+            <div className="two-sec text-center lg:w-3/5 max-w-4xl pr-24 max-lg:px-5 max-lg:mt-5">
                 <p className={`two mb-1 tracking-[4px] font-medium text-gray ${Playfair_DisplayFont.className}`}>ОТЕЛЬ КУРОРТ</p>
                 <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Расслабьтесь в месте Heaven</h2>
                 <hr className="two line m-auto bg-[#6d6960]" />
