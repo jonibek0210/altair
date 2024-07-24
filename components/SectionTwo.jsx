@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useRef } from 'react'
 
 const SectionTwo = ({ Playfair_DisplayFont }) => {
@@ -35,7 +36,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
                     className="w-full h-full object-cover"
                     width={1000}
                     height={1000}
-                    src={"/images/image-1.png"}
+                    src={"/images/image-3.png"}
                     alt='image'
                 />
             </div>
@@ -56,7 +57,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
                     роскошными интерьерами, вдохновленными восточными традициями, и
                     первоклассным сервисом, который сделает ваше пребывание незабываемым.
                 </p>
-                <button className="two button m-auto mt-5">Контакты</button>
+                <Link href={"/contacts"} className="two w-fit block button m-auto mt-5">Контакты</Link>
             </div>
         </div>
     )

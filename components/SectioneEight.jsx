@@ -2,6 +2,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
 import React from 'react'
 
 gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +30,7 @@ const SectioneEight = ({ Playfair_DisplayFont }) => {
                 </p>
             </div>
             <div className="">
-                <button className="eight-sec-title button">Контакты</button>
+                <Link href={"/contacts"} className="eight-sec-title button">Контакты</Link>
             </div>
         </div>
     )

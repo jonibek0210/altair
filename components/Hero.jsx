@@ -33,6 +33,14 @@ const Hero = ({ Playfair_DisplayFont }) => {
                     <div className="w-1/2 max-lg:w-3/5 max-md:w-full">
                         <p className={`animated tracking-[4px] text-white ${Playfair_DisplayFont.className}`}>ДОБРО ПОЖАЛОВАТЬ В</p>
                         <h2 className={`animated text-4xl max-xs:text-4xl font-medium mb-3 text-white ${Playfair_DisplayFont.className}`}>Старинный стиль, современные удобства</h2>
+                        <div className="max-h-[250px] my-2 rounded-xl overflow-hidden md:hidden">
+                            <Image
+                                className='w-full h-full object-cover object-center -translate-y-48'
+                                width={1000}
+                                height={1000}
+                                src={"/images/image-2.png"}
+                                alt='image'
+                            /></div>
                         <p className='animated text-sm text-white'>Искусство Роскоши и Комфорта: Погружение в Удивительный Мир Роскошного Отеля, Где Каждая Деталь Совершенствуется для Максимального Комфорта и Удовольствия Гостей. Откройте Двери в Роскошь, Где Расположение, Обслуживание и Удобства Сливаются в Идеальное Гостеприимство.</p>
                         <button onClick={openModal} className='animated button mt-5'>Оставить заявку</button>
                     </div>
@@ -41,7 +49,7 @@ const Hero = ({ Playfair_DisplayFont }) => {
                             className='w-full h-full object-cover object-bottom -translate-y-10'
                             width={1000}
                             height={1000}
-                            src={"/images/image-1.png"}
+                            src={"/images/image-2.png"}
                             alt='image'
                         />
                     </div>

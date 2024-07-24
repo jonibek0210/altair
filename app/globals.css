@@ -52,3 +52,30 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
+
+/* .swiper-slide-prev,
+.swiper-slide-next {
+  transition: ease 200ms;
+  transform: scale(0.9) !important;
+} */
+
+.rooms-blocks:nth-child(2n+1) {
+  background-color: #9e7777;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #7d5a50;
+  border-radius: 9999px;
+  width: 40px !important;
+  height: 40px !important;
+  box-shadow: 0 3px 10px #7d5a50;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: #fff !important;
+}
+
+.swiper-button-disabled {}
