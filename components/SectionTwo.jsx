@@ -30,7 +30,7 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
     }, []);
 
     return (
-        <div className="flex max-lg:flex-col-reverse items-center gap-20 max-2xl:gap-10">
+        <div className="flex max-lg:flex-col-reverse items-center gap-20 max-2xl:gap-10 overflow-hidden">
             <div className="two-sec-img w-2/5 max-lg:w-full h-[500px] max-2xl:h-[450px] max-xl:h-[400px] max-lg:h-[350px] max-sm:h-[280px] max-lg:mr-5 rounded-r-full overflow-hidden bg-[#1f4037]">
                 <Image
                     className="w-full h-full object-cover"
