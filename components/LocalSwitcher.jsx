@@ -16,7 +16,7 @@ export default function LocalSwitcher({ lang }) {
       <label className='border-2 rounded'>
          <select
             defaultValue={lang}
-            className='bg-transparent py-1'
+            className='bg-transparent py-0.5 text-sm'
             onChange={onSelectChange}
          >
             <option value='ru'>Ru</option>

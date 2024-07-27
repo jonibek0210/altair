@@ -75,68 +75,71 @@ const Header = ({ nav, lang }) => {
                     </Link>
                 </div>
 
-                <LocalSwitcher lang={lang} />
 
-                <nav className={`menu-overlay max-lg:z-[-1]`}>
-                    <ul className='hidden max-md:flex max-md:flex-col md:items-center md:justify-between gap-5 max-md:gap-3 px-3 max-md:pt-5'>
-                        <li className='menu-link-item'>
-                            <p className='menu-link-item-holder transform-none md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={`/${lang}`} className='max-md:text-6xl font-medium'>
+                <div className="flex items-center gap-3">
+                    <LocalSwitcher lang={lang} />
+                    <nav className={`menu-overlay max-lg:z-[-1]`}>
+                        <ul className='hidden max-md:flex max-md:flex-col md:items-center md:justify-between gap-5 max-md:gap-3 px-3 max-md:pt-5'>
+                            <li className='menu-link-item'>
+                                <p className='menu-link-item-holder transform-none md:leading-loose'>
+                                    <Link onClick={() => setOpenModal(false)} href={`/${lang}`} className='max-md:text-6xl font-medium'>
+                                        {nav.home}
+                                    </Link>
+                                </p>
+                            </li>
+                            <li className='menu-link-item'>
+                                <p className='menu-link-item-holder md:leading-loose'>
+                                    <Link onClick={() => setOpenModal(false)} href={"#reviews"} className='max-md:text-6xl font-medium'>
+                                        {nav.reviews}
+                                    </Link>
+                                </p>
+                            </li>
+                            <li className='menu-link-item'>
+                                <p className='menu-link-item-holder md:leading-loose'>
+                                    <Link onClick={() => setOpenModal(false)} href={"#rooms"} className='max-md:text-6xl font-medium'>
+                                        {nav.numbers}
+                                    </Link>
+                                </p>
+                            </li>
+                            <li className='menu-link-item'>
+                                <p className='menu-link-item-holder translate-y-[75px] md:leading-loose'>
+                                    <Link onClick={() => setOpenModal(false)} href={`/${lang}/contacts`} className='max-md:text-6xl font-medium'>
+                                        {nav.contacts}
+                                    </Link>
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul className='max-md:hidden flex max-md:flex-col md:items-center md:justify-between gap-5 max-md:gap-3 px-3 max-md:pt-5'>
+                            <li className='link'>
+                                <Link onClick={() => setOpenModal(false)} href={`/${lang}`}>
                                     {nav.home}
                                 </Link>
-                            </p>
-                        </li>
-                        <li className='menu-link-item'>
-                            <p className='menu-link-item-holder md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={"#reviews"} className='max-md:text-6xl font-medium'>
+                            </li>
+                            <li className='link'>
+                                <Link onClick={() => setOpenModal(false)} href={"#reviews"}>
                                     {nav.reviews}
                                 </Link>
-                            </p>
-                        </li>
-                        <li className='menu-link-item'>
-                            <p className='menu-link-item-holder md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={"#rooms"} className='max-md:text-6xl font-medium'>
+                            </li>
+                            <li className='link'>
+                                <Link onClick={() => setOpenModal(false)} href={"#rooms"}>
                                     {nav.numbers}
                                 </Link>
-                            </p>
-                        </li>
-                        <li className='menu-link-item'>
-                            <p className='menu-link-item-holder translate-y-[75px] md:leading-loose'>
-                                <Link onClick={() => setOpenModal(false)} href={`/${lang}/contacts`} className='max-md:text-6xl font-medium'>
+                            </li>
+                            <li className='link'>
+                                <Link onClick={() => setOpenModal(false)} href={`/${lang}/contacts`}>
                                     {nav.contacts}
                                 </Link>
-                            </p>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
 
-                    <ul className='max-md:hidden flex max-md:flex-col md:items-center md:justify-between gap-5 max-md:gap-3 px-3 max-md:pt-5'>
-                        <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={`/${lang}`}>
-                                {nav.home}
-                            </Link>
-                        </li>
-                        <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={"#reviews"}>
-                                {nav.reviews}
-                            </Link>
-                        </li>
-                        <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={"#rooms"}>
-                                {nav.numbers}
-                            </Link>
-                        </li>
-                        <li className='link'>
-                            <Link onClick={() => setOpenModal(false)} href={`/${lang}/contacts`}>
-                                {nav.contacts}
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="max-md:flex hidden items-center link">
-                    <button className='h-[25px] overflow-hidden my-auto' onClick={() => setOpenModal(!openModal)}>
-                        <IoCloseSharp className='close' size={30} color='#fff' />
-                        <GiHamburgerMenu className='open' size={30} color='#fff' />
-                    </button>
+                    <div className="max-md:flex hidden items-center link">
+                        <button className='h-[25px] overflow-hidden my-auto' onClick={() => setOpenModal(!openModal)}>
+                            <IoCloseSharp className='close' size={30} color='#fff' />
+                            <GiHamburgerMenu className='open' size={30} color='#fff' />
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
