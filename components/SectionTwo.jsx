@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
 
-const SectionTwo = ({ Playfair_DisplayFont }) => {
+const SectionTwo = ({ Playfair_DisplayFont, homepage, lang }) => {
     gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(() => {
@@ -42,22 +42,13 @@ const SectionTwo = ({ Playfair_DisplayFont }) => {
             </div>
 
             <div className="two-sec text-center lg:w-3/5 max-w-4xl pr-24 max-lg:px-5 max-lg:mt-5">
-                <p className={`two mb-1 tracking-[4px] font-medium text-gray ${Playfair_DisplayFont.className}`}>ОТЕЛЬ КУРОРТ</p>
-                <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Расслабьтесь в месте Heaven</h2>
+                <p className={`two mb-1 tracking-[4px] font-medium text-gray ${Playfair_DisplayFont.className}`}>{homepage.sectiontwo.subtitle}</p>
+                <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>{homepage.sectiontwo.title}</h2>
                 <hr className="two line m-auto bg-[#6d6960]" />
                 <p className="two text-sm tracking-[1px] leading-5 text-gray">
-                    Добро пожаловать в наш уникальный отель, расположенный
-                    в сердце древнего города Самарканд. Построенный в
-                    старинном восточном стиле, наш отель предлагает
-                    непревзойденное сочетание исторического очарования и
-                    современного комфорта. В нескольких шагах от главных
-                    достопримечательностей города и знаменитого Сиябского
-                    рынка, наш отель идеально подходит для тех, кто хочет
-                    погрузиться в атмосферу величественного Самарканда. Насладитесь
-                    роскошными интерьерами, вдохновленными восточными традициями, и
-                    первоклассным сервисом, который сделает ваше пребывание незабываемым.
+                    {homepage.sectiontwo.dcr}
                 </p>
-                <Link href={"/contacts"} className="two w-fit block button m-auto mt-5">Контакты</Link>
+                <Link href={`/${lang}/contacts`} className="two w-fit block button m-auto mt-5">{homepage.sectiontwo.button}</Link>
             </div>
         </div>
     )

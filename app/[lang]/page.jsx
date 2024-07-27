@@ -10,6 +10,7 @@ import SectionFive from "@/components/SectionFive";
 import SectionSix from "@/components/SectionSix";
 import SectionSeven from "@/components/SectionSeven";
 import SectioneEight from "@/components/SectioneEight";
+import { getDictionary } from "@/lib/dictionary";
 
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],
@@ -17,26 +18,28 @@ const Playfair_DisplayFont = Playfair_Display({
    subsets: ["latin"]
 });
 
-export default function Home() {
+export default async function Home({ params: { lang } }) {
+   const { homepage } = await getDictionary(lang);
+
    return (
       <>
          <section>
-            <Hero Playfair_DisplayFont={Playfair_DisplayFont} />
+            <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
          <section>
-            <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
          </section>
 
          <section className="bg-[#c9aa7e]">
-            <SectionThree Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionThree Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
          <section>
-            <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
          <section className="bg-[#c9aa7e]">
-            <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
          {/* <section>
@@ -44,11 +47,11 @@ export default function Home() {
          </section> */}
 
          <section className="bg-[#c9aa7e]">
-            <SectionSeven Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectionSeven Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
          <section className="bg-[#c9aa7e]">
-            <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} />
+            <SectioneEight Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
          </section>
       </>
    );

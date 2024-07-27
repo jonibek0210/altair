@@ -13,92 +13,92 @@ import 'swiper/css/navigation';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-const arr = [
-    {
-        title: "Одноместный номер делюкс",
-        dcr: "",
-        img: "/images/image-1.png",
-        additionally: [
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            }
-        ]
-    },
-    {
-        title: "Двухместный номер делюкс",
-        dcr: "",
-        img: "/images/image-1.png",
-        additionally: [
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            }
-        ]
-    },
-    {
-        title: "Трехместный номер делюкс",
-        dcr: "",
-        img: "/images/image-1.png",
-        additionally: [
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            },
-            {
-                title: "Free Wifi",
-                dcr: "Lorem ipsum dolor sit amet consectetur."
-            }
-        ]
-    },
-]
 
 gsap.registerPlugin(ScrollTrigger);
-const SectionFour = ({ Playfair_DisplayFont }) => {
+const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
+    const arr = [
+        {
+            title: homepage.sectionfour.title,
+            dcr: "",
+            img: "/images/image-1.png",
+            additionally: [
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                }
+            ]
+        },
+        {
+            title: homepage.sectionfour.title2,
+            dcr: "",
+            img: "/images/image-1.png",
+            additionally: [
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                }
+            ]
+        },
+        {
+            title: homepage.sectionfour.title3,
+            dcr: "",
+            img: "/images/image-1.png",
+            additionally: [
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                },
+                {
+                    title: "Free Wifi",
+                    dcr: "Lorem ipsum dolor sit amet consectetur."
+                }
+            ]
+        },
+    ]
 
     useGSAP(() => {
         gsap.from(".room", {
@@ -194,7 +194,7 @@ const SectionFour = ({ Playfair_DisplayFont }) => {
                                             }
                                         </Swiper>
                                         <div className="py-5">
-                                            <button className="button m-auto block">Reserved Now</button>
+                                            <button className="button m-auto block">{homepage.sectionfour.button}</button>
                                         </div>
                                     </div>
                                 </div>

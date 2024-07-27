@@ -6,25 +6,25 @@ import { IoIosCall, IoMdArrowDropright } from "react-icons/io";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const arr = [
-    {
-        icon: <IoIosCall className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "Номер",
-        dcr: "+998(99)999-9999"
-    },
-    {
-        icon: <FaMapMarkedAlt className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "локация",
-        dcr: "Location"
-    },
-    {
-        icon: <MdEmail className='text-[30px] max-lg:text-[25px]' color='#fff' />,
-        title: "почта",
-        dcr: "altair@gmail.com"
-    }
-]
 
-const ContactInfo = ({ Playfair_DisplayFont }) => {
+const ContactInfo = ({ Playfair_DisplayFont, contact }) => {
+    const arr = [
+        {
+            icon: <IoIosCall className='text-[30px] max-lg:text-[25px]' color='#fff' />,
+            title: contact.info.title,
+            dcr: "+998(99)999-9999"
+        },
+        {
+            icon: <FaMapMarkedAlt className='text-[30px] max-lg:text-[25px]' color='#fff' />,
+            title: contact.info.title1,
+            dcr: "Location"
+        },
+        {
+            icon: <MdEmail className='text-[30px] max-lg:text-[25px]' color='#fff' />,
+            title: contact.info.title2,
+            dcr: "altair@gmail.com"
+        }
+    ]
 
     useGSAP(() => {
         gsap.from(".info", {

@@ -6,26 +6,27 @@ import { FaBus } from "react-icons/fa";
 import { MdDinnerDining } from "react-icons/md";
 import { FaCameraRetro } from "react-icons/fa";
 
-const arr = [
-    {
-        title: "Трансфер",
-        dcr: "Мы предлагаем удобный трансфер от аэропорта или вокзала прямо до нашего отеля и обратно. Насладитесь комфортной поездкой, расслабьтесь и забудьте о заботах – наш профессиональный водитель встретит вас, обеспечит быстрое и безопасное путешествие.",
-        icon: <FaBus size={30} color="#fff" />
-    },
-    {
-        title: "Завтрак",
-        dcr: "Начните день с изысканного шведского стола в нашем отеле! Насладитесь свежими фруктами, выпечкой и традиционными восточными деликатесами. Широкий выбор горячих и холодных блюд подарит вам заряд энергии для изучения великолепного Самарканда.",
-        icon: <MdDinnerDining size={30} color="#fff" />
-    },
-    {
-        title: "Экскурсии",
-        dcr: "Наш отель предлагает организацию профессиональных экскурсий по Самарканду и его окрестностям. Откройте для себя исторические и культурные сокровища города с нашими опытными гидами, которые помогут вам максимально насладиться вашим визитом.",
-        icon: <FaCameraRetro size={30} color="#fff" />
-    },
-]
 
 gsap.registerPlugin(ScrollTrigger);
-const SectionThree = ({ Playfair_DisplayFont }) => {
+const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
+    const arr = [
+        {
+            title: homepage.sectionthree.title,
+            dcr: homepage.sectionthree.dcr,
+            icon: <FaBus size={30} color="#fff" />
+        },
+        {
+            title: homepage.sectionthree.title2,
+            dcr: homepage.sectionthree.dcr2,
+            icon: <MdDinnerDining size={30} color="#fff" />
+        },
+        {
+            title: homepage.sectionthree.title3,
+            dcr: homepage.sectionthree.dcr3,
+            icon: <FaCameraRetro size={30} color="#fff" />
+        },
+    ]
+
     useGSAP(() => {
         gsap.from(".a", {
             x: -40,

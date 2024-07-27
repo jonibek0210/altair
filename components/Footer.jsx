@@ -2,11 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ footer }) => {
     return (
         <footer className='w-full bg-[#7d5a50] text-white'>
             <div className="custom-container flex gap-5 flex-wrap justify-between items-center py-5 max-xl:py-3">
-                <div className="">Алтаир 2024 © Все права защищены</div>
+                <div className="">{footer.title}</div>
                 <ul className='flex items-center gap-5'>
                     <li>
                         <Link href={"#"} className='bg-white p-2 max-xl:p-1 rounded-full block'>
