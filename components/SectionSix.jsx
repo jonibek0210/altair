@@ -34,8 +34,8 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
             <div className="mt-10">
                 <Marquee>
                     {
-                        [1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                            <div className="w-80 h-[200px] mx-2 overflow-hidden">
+                        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17].map((i) => (
+                            <div key={i} className="w-80 h-[200px] mx-2 overflow-hidden">
                                 <Image
                                     className='w-full h-full object-cover rounded-lg'
                                     src={`/images/image-${i}.png`}
