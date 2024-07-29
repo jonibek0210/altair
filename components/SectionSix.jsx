@@ -38,7 +38,7 @@ const SectionSix = ({ Playfair_DisplayFont }) => {
                             <div key={i} className="w-80 h-[200px] mx-2 overflow-hidden">
                                 <Image
                                     className='w-full h-full object-cover rounded-lg'
-                                    src={`/images/image-${i}.png`}
+                                    src={`/images/image-${i}.webp`}
                                     width={1000}
                                     height={1000}
                                     alt='images'

@@ -38,7 +38,7 @@ const Hero = ({ Playfair_DisplayFont, homepage }) => {
                                 className='w-full h-full object-cover object-center -translate-y-48'
                                 width={1000}
                                 height={1000}
-                                src={"/images/image-2.png"}
+                                src={"/images/image-2.webp"}
                                 alt='image'
                             /></div>
                         <p className='animated text-sm text-white'>{homepage.hero.dcr}</p>
@@ -49,7 +49,7 @@ const Hero = ({ Playfair_DisplayFont, homepage }) => {
                             className='w-full h-full object-cover object-bottom -translate-y-10'
                             width={1000}
                             height={1000}
-                            src={"/images/image-2.png"}
+                            src={"/images/image-2.webp"}
                             alt='image'
                         />
                     </div>

@@ -36,7 +36,7 @@ const SectionTwo = ({ Playfair_DisplayFont, homepage, lang }) => {
                     className="w-full h-full object-cover"
                     width={1000}
                     height={1000}
-                    src={"/images/image-3.png"}
+                    src={"/images/image-3.webp"}
                     alt='image'
                 />
             </div>

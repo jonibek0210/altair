@@ -20,7 +20,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionfour.title,
             dcr: "",
-            img: "/images/image-1.png",
+            img: "/images/image-1.webp",
             additionally: [
                 {
                     title: "Free Wifi",
@@ -47,7 +47,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionfour.title2,
             dcr: "",
-            img: "/images/image-1.png",
+            img: "/images/image-1.webp",
             additionally: [
                 {
                     title: "Free Wifi",
@@ -74,7 +74,7 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionfour.title3,
             dcr: "",
-            img: "/images/image-1.png",
+            img: "/images/image-1.webp",
             additionally: [
                 {
                     title: "Free Wifi",
