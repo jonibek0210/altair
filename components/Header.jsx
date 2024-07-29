@@ -75,7 +75,6 @@ const Header = ({ nav, lang }) => {
                     </Link>
                 </div>
 
-
                 <div className="flex items-center gap-3">
                     <LocalSwitcher lang={lang} />
                     <nav className={`menu-overlay max-lg:z-[-1]`}>

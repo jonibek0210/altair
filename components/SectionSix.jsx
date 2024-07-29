@@ -1,58 +1,52 @@
 "use client"
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image'
 import React from 'react'
+import Marquee from "react-fast-marquee";
 
 gsap.registerPlugin(ScrollTrigger);
 const SectionSix = ({ Playfair_DisplayFont }) => {
+
     useGSAP(() => {
-        gsap.from(".time", {
+        gsap.from(".gallery-texts", {
             opacity: 0,
-            x: -40,
+            y: 40,
             duration: 1,
             ease: 'power3.out',
             stagger: .2,
             scrollTrigger: {
-                trigger: ".times",
-                start: "-90% center",
+                trigger: ".gallery",
+                start: "-10% center",
             }
-        })
+        });
     }, [])
 
     return (
-        <div className={`times custom-container flex items-center justify-around py-10 text-gray ${Playfair_DisplayFont.className}`}>
-            <div className="time text-center">
-                <div className="text-5xl max-md:text-4xl font-medium">
-                    256
-                </div>
-                <div className="text-sm mt-1">
-                    Клиенты
-                </div>
+        <div className="padding">
+            <div className="custom-container text-center gallery">
+                <h2 className={`gallery-texts text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>Caputer Every Moment With Us</h2>
+                <hr className="gallery-texts line m-auto bg-[#6d6960]" />
+                <p className="gallery-texts text-sm tracking-[1px] leading-5 text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque similique suscipit fugit blanditiis quas fugiat cupiditate animi voluptas, ipsum aspernatur illum atque id, deserunt dolorum?</p>
             </div>
-            <div className="time text-center">
-                <div className="text-5xl max-md:text-4xl font-medium">
-                    48
-                </div>
-                <div className="text-sm mt-1">
-                    Номера
-                </div>
-            </div>
-            <div className="time text-center">
-                <div className="text-5xl max-md:text-4xl font-medium">
-                    26
-                </div>
-                <div className="text-sm mt-1">
-                    Удобства
-                </div>
-            </div>
-            <div className="time text-center">
-                <div className="text-5xl max-md:text-4xl font-medium">
-                    59
-                </div>
-                <div className="text-sm mt-1">
-                    Персонал
-                </div>
+
+            <div className="mt-10">
+                <Marquee>
+                    {
+                        [1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                            <div className="w-80 h-[200px] mx-2 overflow-hidden">
+                                <Image
+                                    className='w-full h-full object-cover rounded-lg'
+                                    src={`/images/image-${i}.png`}
+                                    width={1000}
+                                    height={1000}
+                                    alt='images'
+                                />
+                            </div>
+                        ))
+                    }
+                </Marquee>
             </div>
         </div>
     )

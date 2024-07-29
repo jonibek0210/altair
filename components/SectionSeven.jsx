@@ -17,7 +17,6 @@ const SectionSeven = ({ Playfair_DisplayFont, homepage }) => {
             scrollTrigger: {
                 trigger: ".trigger",
                 start: "-10% center",
-                // scrub: true
             }
         });
         gsap.from(".com", {

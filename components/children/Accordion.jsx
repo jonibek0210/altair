@@ -19,11 +19,11 @@ const Accordion = ({ title, id, content, expanded, setExpanded }) => {
 
     return (
         <div className="w-full h-auto border-b cursor-pointer" ref={ref}>
-            <div className="py-1 rounded-r-xl flex justify-start " onClick={() => setExpanded(id === expanded ? -1 : id)}>
-                <h3 className="text-sm font-semibold text-gray uppercase">{title}</h3>
+            <div className="pt-1 rounded-r-xl flex justify-start " onClick={() => setExpanded(id === expanded ? -1 : id)}>
+                <h3 className="font-semibold text-gray uppercase">{title}</h3>
                 <IoMdArrowDropright size={20} color="#6d6960" />
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden mb-1">
                 <p className="text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: content }}></p>
             </div>
         </div>

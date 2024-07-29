@@ -7,10 +7,10 @@ import SectionTwo from "@/components/SectionTwo";
 import SectionThree from "@/components/SectionThree";
 import SectionFour from "@/components/SectionFour";
 import SectionFive from "@/components/SectionFive";
-import SectionSix from "@/components/SectionSix";
 import SectionSeven from "@/components/SectionSeven";
 import SectioneEight from "@/components/SectioneEight";
 import { getDictionary } from "@/lib/dictionary";
+import SectionSix from "@/components/SectionSix";
 
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],
@@ -42,9 +42,9 @@ export default async function Home({ params: { lang } }) {
             <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
-         {/* <section>
+         <section>
             <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} />
-         </section> */}
+         </section>
 
          <section className="bg-[#c9aa7e]">
             <SectionSeven Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
