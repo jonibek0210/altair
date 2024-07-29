@@ -11,6 +11,7 @@ import SectionSeven from "@/components/SectionSeven";
 import SectioneEight from "@/components/SectioneEight";
 import { getDictionary } from "@/lib/dictionary";
 import SectionSix from "@/components/SectionSix";
+import Head from "next/head";
 
 const Playfair_DisplayFont = Playfair_Display({
    weight: ['400', "500", "600"],

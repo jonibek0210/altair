@@ -12,10 +12,10 @@ export default function LocalSwitcher({ lang }) {
    };
 
    return (
-      <label className='border-2 rounded'>
+      <label className='border-2 rounded select relative link'>
          <select
             defaultValue={lang}
-            className='bg-transparent py-0.5 text-sm cursor-pointer'
+            className='bg-transparent w-9 px-1 text-sm select cursor-pointer '
             onChange={onSelectChange}
          >
             <option value='ru'>Ru</option>

@@ -78,4 +78,31 @@
   color: #fff !important;
 }
 
-.swiper-button-disabled {}
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.select::before,
+.select::after {
+  --size: 0.2rem;
+  content: "";
+  position: absolute;
+  right: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid white;
+  top: 35%;
+}
+
+.select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid white;
+  top: 60%;
+}
