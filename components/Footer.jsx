@@ -25,7 +25,7 @@ const Footer = ({ footer }) => {
                     </li>
                 </ul>
                 <div className="">
-                    <p>By in DotLabs</p>
+                    <Link href={"https://www.instagram.com/dotlabs.uz"}>By in DotLabs</Link>
                 </div>
             </div>
         </footer>

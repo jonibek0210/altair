@@ -116,12 +116,12 @@ const Header = ({ nav, lang }) => {
                                 </Link>
                             </li>
                             <li className='link'>
-                                <Link onClick={() => setOpenModal(false)} href={"#reviews"}>
+                                <Link onClick={() => setOpenModal(false)} href={`/${lang}/#reviews`}>
                                     {nav.reviews}
                                 </Link>
                             </li>
                             <li className='link'>
-                                <Link onClick={() => setOpenModal(false)} href={"#rooms"}>
+                                <Link onClick={() => setOpenModal(false)} href={`/${lang}/#rooms`}>
                                     {nav.numbers}
                                 </Link>
                             </li>

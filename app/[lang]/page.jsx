@@ -27,6 +27,7 @@ export default async function Home({ params: { lang } }) {
          <section>
             <Hero Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
+
          <section>
             <SectionTwo Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} lang={lang} />
          </section>
@@ -39,9 +40,9 @@ export default async function Home({ params: { lang } }) {
             <SectionFour Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
          </section>
 
-         <section className="bg-[#c9aa7e]">
+         {/* <section className="bg-[#c9aa7e]">
             <SectionFive Playfair_DisplayFont={Playfair_DisplayFont} homepage={homepage} />
-         </section>
+         </section> */}
 
          <section>
             <SectionSix Playfair_DisplayFont={Playfair_DisplayFont} />

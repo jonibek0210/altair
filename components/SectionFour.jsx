@@ -193,9 +193,9 @@ const SectionFour = ({ Playfair_DisplayFont, homepage }) => {
                                                 ))
                                             }
                                         </Swiper>
-                                        <div className="py-5">
+                                        {/* <div className="py-5">
                                             <button className="button m-auto block">{homepage.sectionfour.button}</button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </SwiperSlide>

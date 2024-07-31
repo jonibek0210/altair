@@ -24,7 +24,7 @@ const SectionTwo = ({ Playfair_DisplayFont, homepage, lang }) => {
             opacity: 0,
             scrollTrigger: {
                 trigger: ".two-sec-img",
-                start: "top center",
+                start: "-50% center",
             }
         })
     }, []);
@@ -46,7 +46,7 @@ const SectionTwo = ({ Playfair_DisplayFont, homepage, lang }) => {
                 <h2 className={`two text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-gray ${Playfair_DisplayFont.className}`}>{homepage.sectiontwo.title}</h2>
                 <hr className="two line m-auto bg-[#6d6960]" />
                 <p className="two text-sm tracking-[1px] leading-5 text-gray">
-                    {homepage.sectiontwo.dcr}
+                    {homepage.hero.dcr}
                 </p>
                 <Link href={`/${lang}/contacts`} className="two w-fit block button m-auto mt-5">{homepage.sectiontwo.button}</Link>
             </div>
