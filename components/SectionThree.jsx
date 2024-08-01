@@ -41,31 +41,36 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
     }, []);
 
     return (
-        <div className="as custom-container grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-5 gap-y-20 padding">
-            {
-                arr.map((el, index) => (
-                    <div key={index} className="a px-5">
-                        <div className="absolute -top-12 max-md:-top-5 -left-3 max-2xl:-left-0 z-[-1] w-full h-52 overflow-hidden">
-                            <Image
-                                className='w-full h-full object-cover object-center rounded-xl'
-                                src={el.img}
-                                width={1000}
-                                height={1000}
-                                alt='img'
-                            />
-                        </div>
+        <div className="custom-container padding">
+            <div className="">
+                <h2></h2>
+            </div>
+            <div className="as grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-5 gap-y-20 ">
+                {
+                    arr.map((el, index) => (
+                        <div key={index} className="a px-5">
+                            <div className="absolute -top-12 max-md:-top-5 -left-0 z-[-1] w-full h-52 overflow-hidden">
+                                <Image
+                                    className='w-full h-full object-cover object-center rounded-xl'
+                                    src={el.img}
+                                    width={1000}
+                                    height={1000}
+                                    alt='img'
+                                />
+                            </div>
 
-                        <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-black/30 backdrop-blur-[2px]">
-                            <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
-                                {el.title}
-                            </h3>
-                            <p className="mt-3 text-sm leading-5 tracking-[1px]">
-                                {el.dcr}
-                            </p>
+                            <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-black/30 backdrop-blur-[2px]">
+                                <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
+                                    {el.title}
+                                </h3>
+                                <p className="mt-3 text-sm leading-5 tracking-[1px]">
+                                    {el.dcr}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
     )
 }
