@@ -41,11 +41,11 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
     }, []);
 
     return (
-        <div className="as custom-container grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-20 max-xl:gap-16 max-lg:gap-10 padding">
+        <div className="as custom-container grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-5 gap-y-20 padding">
             {
                 arr.map((el, index) => (
-                    <div key={index} className="a">
-                        <div className="absolute -top-16 -left-3 z-[-1] w-[350px] h-52 overflow-hidden">
+                    <div key={index} className="a px-5">
+                        <div className="absolute -top-12 max-md:-top-5 -left-3 max-2xl:-left-0 z-[-1] w-full h-52 overflow-hidden">
                             <Image
                                 className='w-full h-full object-cover object-center rounded-xl'
                                 src={el.img}
@@ -55,7 +55,7 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
                             />
                         </div>
 
-                        <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-white/30 backdrop-blur-sm">
+                        <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-black/30 backdrop-blur-[2px]">
                             <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
                                 {el.title}
                             </h3>
