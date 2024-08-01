@@ -42,8 +42,8 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
 
     return (
         <div className="custom-container padding">
-            <div className="">
-                <h2></h2>
+            <div className="mb-24 max-md:mb-14 text-center">
+                <h2 className={`text-5xl max-xl:text-4xl max-lg:text-3xl font-medium text-white ${Playfair_DisplayFont.className}`}>{homepage.sectionthree.secTitle}</h2>
             </div>
             <div className="as grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 gap-5 gap-y-20 ">
                 {
