@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaBus } from "react-icons/fa";
 import { MdDinnerDining } from "react-icons/md";
 import { FaCameraRetro } from "react-icons/fa";
+import Image from 'next/image';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -13,17 +14,17 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
         {
             title: homepage.sectionthree.title,
             dcr: homepage.sectionthree.dcr,
-            icon: <FaBus size={30} color="#fff" />
+            img: "/images/services/transfer.png",
         },
         {
             title: homepage.sectionthree.title2,
             dcr: homepage.sectionthree.dcr2,
-            icon: <MdDinnerDining size={30} color="#fff" />
+            img: "/images/services/transfer.png"
         },
         {
             title: homepage.sectionthree.title3,
             dcr: homepage.sectionthree.dcr3,
-            icon: <FaCameraRetro size={30} color="#fff" />
+            img: "/images/services/transfer.png"
         },
     ]
 
@@ -43,11 +44,18 @@ const SectionThree = ({ Playfair_DisplayFont, homepage }) => {
         <div className="as custom-container grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-20 max-xl:gap-16 max-lg:gap-10 padding">
             {
                 arr.map((el, index) => (
-                    <div key={index} className="a max-sm:px-3 text-white">
-                        <div className="border-4 border-white p-3 rounded-full w-fit m-auto">
-                            {el.icon}
+                    <div key={index} className="a">
+                        <div className="absolute -top-16 -left-3 z-[-1] w-[350px] h-52 overflow-hidden">
+                            <Image
+                                className='w-full h-full object-cover object-center rounded-xl'
+                                src={el.img}
+                                width={1000}
+                                height={1000}
+                                alt='img'
+                            />
                         </div>
-                        <div className="text-center mt-5 max-md:mt-3">
+
+                        <div className="text-center mt-5 max-md:mt-3 p-5 rounded-xl text-white bg-white/30 backdrop-blur-sm">
                             <h3 className={`text-4xl max-lg:text-3xl max-sm:text-2xl font-medium ${Playfair_DisplayFont.className}`}>
                                 {el.title}
                             </h3>
